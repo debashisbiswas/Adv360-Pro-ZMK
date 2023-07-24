@@ -24,7 +24,7 @@
     combo_esc {
         timeout-ms = <50>;
         layers = <0>;
-        key-positions = <41 42>;
+        key-positions = <55 56>;
         bindings = <&kp ESC>;
     };
   };
