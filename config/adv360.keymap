@@ -40,7 +40,6 @@
         quick-tap-ms = <175>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        global-quick-tap;
     };
   };
 
