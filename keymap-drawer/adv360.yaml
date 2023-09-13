@@ -22,7 +22,7 @@ layers:
   - R
   - T
   - ''
-  - DEL
+  - ''
   - Y
   - U
   - I
@@ -35,7 +35,7 @@ layers:
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
   - G
-  - TAB
+  - DEL
   - LCTRL
   - LALT
   - LGUI
@@ -67,7 +67,7 @@ layers:
   - LEFT
   - RIGHT
   - symbol
-  - LSHFT
+  - TAB
   - END
   - PG DN
   - ENTER
