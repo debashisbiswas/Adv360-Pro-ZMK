@@ -33,7 +33,7 @@
         // TODO: maybe parameterize these or something to avoid repeated config
 
         // home row mods for slower/weaker fingers
-        sl: slow_homerow_mods_left {
+        xl: slow_homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "SLOW_HOMEROW_MODS_LEFT";
             bindings = <&kp>, <&kp>;
@@ -46,7 +46,7 @@
             hold-trigger-on-release;
         };
 
-        sr: slow_homerow_mods_right {
+        xr: slow_homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "SLOW_HOMEROW_MODS_RIGHT";
             bindings = <&kp>, <&kp>;
@@ -94,7 +94,7 @@
             bindings = <
            &none             &kp N1        &kp N2       &kp N3       &kp N4  &kp N5         &kp KP_NUM                                                                 &mo 2  &kp N6       &kp N7       &kp N8      &kp N9         &kp N0         &kp MINUS
         &kp CAPS              &kp Q         &kp W        &kp E        &kp R   &kp T              &none                                                                 &none   &kp Y        &kp U        &kp I       &kp O          &kp P          &kp BSLH
-       &kp MINUS         &sl LGUI A    &hl LALT S  &hl LCTRL D  &hl LSHFT F   &kp G            &kp DEL  &kp LCTRL  &kp LALT                   &kp LGUI    &kp ESC   &kp BSPC   &kp H  &hr RSHFT J  &hr LCTRL K  &hr LALT L  &sr LGUI SEMI           &kp SQT
+       &kp MINUS         &xl LGUI A    &hl LALT S  &hl LCTRL D  &hl LSHFT F   &kp G            &kp DEL  &kp LCTRL  &kp LALT                   &kp LGUI    &kp ESC   &kp BSPC   &kp H  &hr RSHFT J  &hr LCTRL K  &hr LALT L  &xr LGUI SEMI           &kp SQT
        &kp LSHFT              &kp Z         &kp X        &kp C        &kp V   &kp B                                &kp HOME                  &kp PG_UP                         &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH         &kp RSHFT
  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp LEFT    &kp RIGHT                      &mo 1  &kp TAB     &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE               &kp UP     &kp DOWN  &kp C_PREV     &kp C_NEXT  &kp C_PLAY_PAUSE
             >;
