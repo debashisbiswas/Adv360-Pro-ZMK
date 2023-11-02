@@ -26,6 +26,15 @@
 
 #define THUMBS THUMBS_LEFT THUMBS_RIGHT
 
+// Layers
+#define BASE 0
+#define SYM 1
+#define NAV 2
+#define MOD 3
+
+#define XXX &none
+#define ___ &trans
+
 / {
     behaviors {
         #include "macros.dtsi"
@@ -92,31 +101,41 @@
 
         default_layer {
             bindings = <
-           &none             &kp N1        &kp N2       &kp N3       &kp N4  &kp N5         &kp KP_NUM                                                                 &mo 2  &kp N6       &kp N7       &kp N8      &kp N9         &kp N0         &kp MINUS
-        &kp CAPS              &kp Q         &kp W        &kp E        &kp R   &kp T              &none                                                                 &none   &kp Y        &kp U        &kp I       &kp O          &kp P          &kp BSLH
-       &kp MINUS         &xl LGUI A    &hl LALT S  &hl LCTRL D  &hl LSHFT F   &kp G            &kp DEL  &kp LCTRL  &kp LALT                   &kp LGUI    &kp ESC   &kp BSPC   &kp H  &hr RSHFT J  &hr LCTRL K  &hr LALT L  &xr LGUI SEMI           &kp SQT
+             XXX             &kp N1        &kp N2       &kp N3       &kp N4  &kp N5         &kp KP_NUM                                                               &mo MOD  &kp N6       &kp N7       &kp N8      &kp N9         &kp N0         &kp MINUS
+        &kp CAPS              &kp Q         &kp W        &kp E        &kp R   &kp T                XXX                                                                   XXX   &kp Y        &kp U        &kp I       &kp O          &kp P          &kp BSLH
+       &kp MINUS         &xl LGUI A    &hl LALT S  &hl LCTRL D  &hl LSHFT F   &kp G            &kp DEL  &mo NAV    &kp LALT                   &kp LGUI    &kp ESC   &kp BSPC   &kp H  &hr RSHFT J  &hr LCTRL K  &hr LALT L  &xr LGUI SEMI           &kp SQT
        &kp LSHFT              &kp Z         &kp X        &kp C        &kp V   &kp B                                &kp HOME                  &kp PG_UP                         &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH         &kp RSHFT
- &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp LEFT    &kp RIGHT                      &mo 1  &kp TAB     &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE               &kp UP     &kp DOWN  &kp C_PREV     &kp C_NEXT  &kp C_PLAY_PAUSE
+ &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp LEFT    &kp RIGHT                    &mo SYM  &kp TAB     &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE               &kp UP     &kp DOWN  &kp C_PREV     &kp C_NEXT  &kp C_PLAY_PAUSE
             >;
         };
 
         layer_symbol {
             bindings = <
-     &none         &kp F1                &kp F2             &kp F3                 &kp F4    &kp F5            &kp F11                                                  &kp F12       &kp F6            &kp F7     &kp F8             &kp F9   &kp F10      &none
-    &trans         &trans         &kp LESS_THAN         &kp DOLLAR       &kp GREATER_THAN    &trans              &none                                                    &none       &trans  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET    &trans     &trans
- &kp MINUS  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH              &none  &trans  &trans                  &trans  &trans    &none  &kp PERCENT    &kp LEFT_BRACE  &kp EQUAL    &kp RIGHT_BRACE  &kp PIPE  &kp GRAVE
-    &trans         &trans             &kp COLON           &kp STAR               &kp PLUS    &trans                             &trans                  &trans                        &trans     &kp AMPERSAND  &kp CARET          &kp TILDE    &trans     &trans
-    &trans         &trans                &trans             &trans                 &trans                       &trans  &trans  &trans                  &trans  &trans   &trans                         &trans     &trans             &trans    &trans     &trans
+       XXX         &kp F1                &kp F2             &kp F3                 &kp F4    &kp F5            &kp F11                                                  &kp F12       &kp F6            &kp F7     &kp F8             &kp F9   &kp F10        XXX
+       ___            ___         &kp LESS_THAN         &kp DOLLAR       &kp GREATER_THAN       ___                XXX                                                      XXX          ___  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET       ___        ___
+ &kp MINUS  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp HASH                XXX     ___     ___                     ___     ___      XXX  &kp PERCENT    &kp LEFT_BRACE  &kp EQUAL    &kp RIGHT_BRACE  &kp PIPE  &kp GRAVE
+       ___            ___             &kp COLON           &kp STAR               &kp PLUS       ___                                ___                     ___                           ___     &kp AMPERSAND  &kp CARET          &kp TILDE       ___        ___
+       ___            ___                   ___                ___                    ___                          ___     ___     ___                     ___     ___      ___                            ___        ___                ___       ___        ___
+            >;
+        };
+
+        layer_nav {
+            bindings = <
+       XXX            XXX                   XXX                XXX                    XXX       XXX                XXX                                                      XXX          XXX               XXX        XXX                XXX       XXX        XXX
+       XXX            XXX                   XXX                XXX                    XXX       XXX                XXX                                                      XXX          XXX               XXX        XXX                XXX       XXX        XXX
+       XXX       &kp LGUI              &kp LALT          &kp LCTRL             &kp LSHIFT       XXX                XXX     ___     ___                     ___     ___      XXX     &kp LEFT          &kp DOWN     &kp UP          &kp RIGHT       XXX        XXX
+       XXX            XXX                   XXX                XXX                    XXX       XXX                                ___                     ___                           XXX               XXX        XXX                XXX       XXX        XXX
+       XXX            XXX                   XXX                XXX                    XXX                          ___     ___     ___                     ___     ___      ___                            XXX        XXX                XXX       XXX        XXX
             >;
         };
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+    XXX  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    XXX                                                                             ___     XXX         XXX         XXX     XXX     XXX     XXX
+    XXX           XXX           XXX           XXX           XXX           XXX            &bootloader                                                                     &bootloader     XXX         XXX         XXX     XXX     XXX     XXX
+    XXX           XXX           XXX           XXX           XXX           XXX                    XXX     XXX     XXX                  &bt BT_CLR         XXX  &rgb_ug RGB_MEFS_CMD 5     XXX         XXX         XXX     XXX     XXX     XXX
+    XXX           XXX           XXX           XXX           XXX           XXX                                    XXX                         XXX                                         XXX         XXX         XXX     XXX     XXX     XXX
+    XXX           XXX           XXX           XXX           XXX                                  XXX     XXX     XXX                         XXX  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC     XXX     XXX     XXX
             >;
         };
 
