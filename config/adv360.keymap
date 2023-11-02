@@ -30,9 +30,9 @@
     behaviors {
         #include "macros.dtsi"
 
-        # TODO: maybe parameterize these or something to avoid repeated config
+        // TODO: maybe parameterize these or something to avoid repeated config
 
-        # home row mods for slower/weaker fingers
+        // home row mods for slower/weaker fingers
         sl: slow_homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "SLOW_HOMEROW_MODS_LEFT";
@@ -59,7 +59,7 @@
             hold-trigger-on-release;
         };
 
-        # regular home row mods
+        // regular home row mods
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
