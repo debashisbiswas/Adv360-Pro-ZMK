@@ -121,7 +121,7 @@
 
         layer_nav {
             bindings = <
-       XXX            XXX                   XXX                XXX                    XXX       XXX                XXX                                                      XXX          XXX               XXX        XXX                XXX       XXX        XXX
+       XXX            XXX                   XXX                XXX                    XXX       XXX         &kp C_SLEEP                                                     XXX          XXX               XXX        XXX                XXX       XXX        XXX
        XXX            XXX                   XXX                XXX                    XXX       XXX                XXX                                                      XXX          XXX               XXX        XXX                XXX       XXX        XXX
        XXX       &kp LGUI              &kp LALT          &kp LCTRL             &kp LSHIFT       XXX                XXX     ___     ___                     ___     ___      XXX     &kp LEFT          &kp DOWN     &kp UP          &kp RIGHT       XXX        XXX
        XXX            XXX                   XXX                XXX                    XXX       XXX                                ___                     ___                           XXX               XXX        XXX                XXX       XXX        XXX
