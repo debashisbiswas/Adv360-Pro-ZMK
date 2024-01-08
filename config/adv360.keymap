@@ -64,7 +64,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <KEYS_LEFT>;
+            // Allow thumbs left for HRM + tab
+            hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT>;
             hold-trigger-on-release;
         };
 
@@ -91,7 +92,8 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <KEYS_LEFT>;
+            // Allow thumbs left for HRM + tab
+            hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT>;
             hold-trigger-on-release;
         };
     };
