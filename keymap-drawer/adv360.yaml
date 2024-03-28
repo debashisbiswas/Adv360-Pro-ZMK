@@ -21,7 +21,7 @@ layers:
   - E
   - R
   - T
-  - ''
+  - TAB
   - ''
   - Y
   - U
@@ -43,9 +43,9 @@ layers:
   - BSPC
   - H
   - {t: J, h: RSHFT}
-  - {t: K, h: LCTRL}
+  - {t: K, h: RCTRL}
   - {t: L, h: LALT}
-  - {t: ;, h: LGUI}
+  - {t: ;, h: RGUI}
   - ''''
   - LSHFT
   - Z
@@ -67,7 +67,7 @@ layers:
   - LEFT
   - RIGHT
   - symbol
-  - TAB
+  - LSHFT
   - END
   - PG DN
   - ENTER
