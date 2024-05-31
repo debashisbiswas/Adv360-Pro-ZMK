@@ -21,7 +21,7 @@ layers:
   - E
   - R
   - T
-  - TAB
+  - ''
   - ''
   - Y
   - U
@@ -35,12 +35,12 @@ layers:
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
   - G
-  - DEL
+  - ''
   - nav
   - LALT
   - LGUI
   - ESC
-  - BSPC
+  - ''
   - H
   - {t: J, h: RSHFT}
   - {t: K, h: RCTRL}
@@ -64,16 +64,16 @@ layers:
   - PRINTSCREEN
   - VOLUME DOWN
   - VOL UP
-  - LEFT
-  - RIGHT
+  - ''
+  - TAB
   - symbol
   - LSHFT
   - END
   - PG DN
   - ENTER
   - SPACE
-  - UP
-  - DOWN
+  - BSPC
+  - DEL
   - PREV
   - NEXT
   - PLAY PAUSE
