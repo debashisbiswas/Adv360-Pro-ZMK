@@ -13,7 +13,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - ''
   - CAPS
   - Q
   - W
@@ -27,7 +27,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - ''
   - '-'
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
@@ -35,10 +35,10 @@ layers:
   - {t: F, h: LSHFT}
   - G
   - ''
-  - nav
-  - LALT
-  - LGUI
-  - ESC
+  - LCTRL
+  - ''
+  - ''
+  - ''
   - ''
   - H
   - {t: J, h: RSHFT}
@@ -46,29 +46,29 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: RGUI}
   - ''''
-  - LSHFT
+  - ''
   - Z
   - X
   - C
   - V
   - B
-  - HOME
-  - PG UP
+  - ''
+  - ''
   - N
   - M
   - ','
   - .
   - /
-  - RSHFT
+  - ''
   - PRINTSCREEN
-  - VOLUME DOWN
+  - VOL DOWN
   - VOL UP
   - ''
   - TAB
   - symbol
-  - LSHFT
-  - END
-  - PG DN
+  - nav
+  - ESC
+  - ''
   - ENTER
   - SPACE
   - BSPC
@@ -171,8 +171,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - HOME
+  - PG UP
   - ''
   - ''
   - ''
@@ -189,7 +189,7 @@ layers:
   - LSHIFT
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -203,24 +203,24 @@ layers:
   - ''
   - ''
   - ''
+  - END
+  - PG DN
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
