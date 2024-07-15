@@ -28,7 +28,7 @@ layers:
   - I
   - O
   - P
-  - ''
+  - \
   - '-'
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
