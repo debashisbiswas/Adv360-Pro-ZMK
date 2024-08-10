@@ -82,6 +82,10 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
     font-size: 8px;
@@ -113,7 +117,7 @@ path.combo {
 /* End Tabler Icons Cleanup */
 </style>
 <g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label">default:</text>
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(35, 42)" class="key keypos-0">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
@@ -146,8 +150,9 @@ path.combo {
 </g>
 <g transform="translate(630, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">mod</text>
-</g>
+<a href="#mod">
+<text x="0" y="0" class="key tap layer-activator">mod</text>
+</a></g>
 <g transform="translate(686, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">6</text>
@@ -377,12 +382,14 @@ path.combo {
 </g>
 <g transform="translate(319, 347) rotate(15.0)" class="key keypos-65">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
-<text x="0" y="0" class="key tap">symbol</text>
-</g>
+<a href="#symbol">
+<text x="0" y="0" class="key tap layer-activator">symbol</text>
+</a></g>
 <g transform="translate(373, 361) rotate(15.0)" class="key keypos-66">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
-<text x="0" y="0" class="key tap">nav</text>
-</g>
+<a href="#nav">
+<text x="0" y="0" class="key tap layer-activator">nav</text>
+</a></g>
 <g transform="translate(420, 403) rotate(15.0)" class="key keypos-67">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
@@ -397,6 +404,7 @@ path.combo {
 <g transform="translate(689, 347) rotate(-15.0)" class="key keypos-70">
 <rect rx="6" ry="6" x="-26" y="-54" width="52" height="108" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
+<text x="0" y="52" class="key hold">RSHFT</text>
 </g>
 <g transform="translate(742, 252)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -423,7 +431,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 493)" class="layer-symbol">
-<text x="0" y="28" class="label">symbol:</text>
+<text x="0" y="28" class="label" id="symbol">symbol:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(35, 42)" class="key keypos-0">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
@@ -725,7 +733,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 986)" class="layer-nav">
-<text x="0" y="28" class="label">nav:</text>
+<text x="0" y="28" class="label" id="nav">nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(35, 42)" class="key keypos-0">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
@@ -986,7 +994,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 1479)" class="layer-mod">
-<text x="0" y="28" class="label">mod:</text>
+<text x="0" y="28" class="label" id="mod">mod:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(35, 42)" class="key keypos-0">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>

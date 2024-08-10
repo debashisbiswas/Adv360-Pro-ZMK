@@ -71,7 +71,7 @@ layers:
   - ESC
   - ''
   - ENTER
-  - SPACE
+  - {t: SPACE, h: RSHFT}
   - BSPC
   - DEL
   - PREV
