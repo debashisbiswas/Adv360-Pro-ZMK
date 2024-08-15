@@ -110,7 +110,7 @@
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
 
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
         };
