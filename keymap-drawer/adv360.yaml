@@ -64,11 +64,11 @@ layers:
   - PRINTSCREEN
   - VOL DN
   - VOL UP
-  - ''
+  - ESC
   - TAB
   - symbol
   - nav
-  - ESC
+  - ''
   - ''
   - ENTER
   - {t: SPACE, h: RSHFT}
